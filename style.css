@@ -50,6 +50,12 @@ header #nav-bar {
   padding: 4rem 2.5rem 0;
 }
 
+.first-test h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
 .shop-now {
   display: flex;
   column-gap: 16px;
