@@ -103,6 +103,27 @@ p {
     grid-template-columns: 30% 39% 31%;
   }
 
+  .first-test {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .first-test h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+
+  .first-test p {
+    line-height: 23px;
+  }
+
+  .shop-now {
+    padding: 2rem 6rem;
+    font-size: 12px;
+    color: gray;
+  }
+
   #arrow-icons {
     display: none;
   }
