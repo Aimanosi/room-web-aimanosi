@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 375px;
+  width: 576px;
   font-family: "League Spartan", sans-serif;
 }
 
@@ -13,14 +13,14 @@ header .image-hero-1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 375px;
-  height: 375px;
+  width: 576px;
+  height: 576px;
   position: relative;
 }
 
 header #nav-bar {
   display: flex;
-  column-gap: 8rem;
+  column-gap: 14rem;
 }
 
 #nav-logo {
@@ -28,8 +28,12 @@ header #nav-bar {
 }
 
 #nav-hamburger {
-  margin-left: 16px;
+  margin-left: 20px;
   margin-top: 2rem;
+}
+
+.nav-info {
+  display: none;
 }
 
 #arrow-icons {
@@ -56,7 +60,7 @@ header #nav-bar {
 }
 
 footer img {
-  width: 375px;
+  width: 100%;
 }
 
 .second-text {
@@ -73,4 +77,77 @@ p {
   color: Gray;
   font-size: 14px;
   line-height: 1.2rem;
+}
+
+@media (min-width: 1199px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  header .image-hero-1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/desktop-image-hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 30% 39% 31%;
+  }
+
+  #arrow-icons {
+    display: none;
+  }
+
+  .section-two {
+    position: relative;
+  }
+
+  #arrow-icons-1 {
+    display: flex;
+    column-gap: 2.5rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 2.15rem;
+  }
+
+  #nav-hamburger {
+    display: none;
+    margin-left: 20px;
+    margin-top: 2rem;
+  }
+
+  #nav-logo {
+    margin-top: 2rem;
+    margin-left: 4rem;
+  }
+
+  .nav-info {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    column-gap: 2rem;
+  }
+  header #nav-bar {
+    display: flex;
+    column-gap: 8rem;
+  }
+  a {
+    color: white;
+    text-underline-offset: 6px;
+  }
+
+  p1 {
+    color: white;
+  }
 }
